@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent" android:background="#E4E4E4"
+                                             android:id="@+id/constraintLayout">
+
+    <TextView
+            android:text="Score: 0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/finalScoreText" android:textSize="36sp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="733dp" android:layout_marginTop="100dp"
+            app:layout_constraintTop_toTopOf="parent" android:background="#FFFFFF" android:id="@+id/scrollView2"
+            tools:layout_editor_absoluteX="0dp">
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" app:layout_constraintTop_toTopOf="@+id/textView9"
+                app:layout_constraintBottom_toTopOf="@+id/textView9">
+
+            <TextView
+                    android:text="M11 - Innovative Architecture: 0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/architectureText"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp" android:textColor="#000000" android:textSize="24sp"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/divider11"/>
+            <View
+                    android:id="@+id/divider11"
+                    android:layout_width="395dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    tools:visibility="visible"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" app:layout_constraintTop_toBottomOf="@+id/steelToggle"
+                    android:layout_marginTop="16dp"/>
+            <TextView
+                    android:text="M10 - Steel Construction: 0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/constructionText"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp" android:textColor="#000000" android:textSize="24sp"
+                    app:layout_constraintTop_toBottomOf="@+id/divider10" android:layout_marginTop="16dp"/>
+            <View
+                    android:id="@+id/divider7"
+                    android:layout_width="395dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    tools:visibility="visible"
+                    android:visibility="visible" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/trafficToggle"/>
+            <View
+                    android:id="@+id/divider8"
+                    android:layout_width="395dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    tools:visibility="visible"
+                    android:visibility="visible" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/swingToggle"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"/>
+            <View
+                    android:id="@+id/divider9"
+                    android:layout_width="395dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    tools:visibility="visible"
+                    android:visibility="visible" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/elevatorToggle2" android:layout_marginTop="16dp"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"/>
+            <View
+                    android:id="@+id/divider10"
+                    android:layout_width="395dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    tools:visibility="visible"
+                    android:visibility="visible"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/safteySlider"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"/>
+            <View
+                    android:id="@+id/divider13"
+                    android:layout_width="395dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    tools:visibility="visible"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/architectureToggle2"/>
+            <TextView
+                    android:text="M05 - Treehouse: 0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/treehouseText"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp" android:textColor="#000000" android:textSize="24sp"
+                    app:layout_constraintTop_toBottomOf="@+id/divider5" android:layout_marginTop="16dp"/>
+            <View
+                    android:id="@+id/divider6"
+                    android:layout_width="395dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    tools:visibility="visible"
+                    android:visibility="visible" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/treehouseSlider2"/>
+            <SeekBar
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="300dp"
+                    android:layout_height="32dp"
+                    android:max="16"
+                    android:progress="0"
+                    android:id="@+id/treehouseSlider2"
+                    app:layout_constraintStart_toEndOf="@+id/treehouseLabel2"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView11"
+            />
+            <TextView
+                    android:text="0"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/treehouseLabel2"
+                    android:textColor="@color/colorPrimary" android:textSize="24dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView11"
+                    app:layout_constraintStart_toStartOf="@+id/textView11"
+            />
+            <View
+                    android:id="@+id/divider5"
+                    android:layout_width="395dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    tools:visibility="visible"
+                    android:visibility="visible" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/wildlifeToggle"/>
+            <TextView
+                    android:text="M06 - Traffic Jam: 0"
+                    android:layout_width="230dp"
+                    android:layout_height="31dp"
+                    android:id="@+id/trafficText"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp" android:textColor="#000000" android:textSize="24sp"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/divider6"/>
+            <TextView
+                    android:text="M07 - Swing: 0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/swingText"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp" android:textColor="#000000" android:textSize="24sp"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/divider7"/>
+            <TextView
+                    android:text="M08 - Elevator: 0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/elevatorText"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp" android:textColor="#000000" android:textSize="24sp"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/divider8"/>
+            <TextView
+                    android:text="M09 - Safety Factor: 0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/safteyText"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp" android:textColor="#000000" android:textSize="24sp"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/divider9"/>
+            <TextView
+                    android:text="M04 - Design For Wildlife: 0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wildlifeText"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp" android:textColor="#000000" android:textSize="24sp"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/divider4"/>
+            <View
+                    android:id="@+id/divider4"
+                    android:layout_width="395dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    tools:visibility="visible"
+                    android:visibility="visible" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/droneToggle" android:layout_marginTop="16dp"/>
+            <ToggleButton
+                    android:text="ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/craneToggle3" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10"
+                    app:layout_constraintStart_toStartOf="@+id/textView10"
+                    android:textOff="no" android:textOn="yes"/>
+            <TextView
+                    android:text="Is the Inspection Drone Supported by the axle (A) on the Bridge?  "
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    app:layout_constraintStart_toStartOf="@+id/craneToggle2"
+                    android:textColor="#000000"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/droneText"
+                    android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                    android:width="0dip"
+            />
+            <View
+                    android:id="@+id/divider3"
+                    android:layout_width="395dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    tools:visibility="visible"
+                    android:visibility="visible" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/craneToggle3" android:layout_marginTop="16dp"/>
+            <TextView
+                    android:text="M03 - Inspection Drone: 0 "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/droneText"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp" android:textColor="#000000" android:textSize="24sp"
+                    app:layout_constraintTop_toBottomOf="@+id/divider3" android:layout_marginTop="16dp"/>
+            <TextView
+                    android:text="Is Hooked Blue Unit clearly lowered any distance from the Guide Hole? "
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"
+                    android:id="@+id/textView"
+                    android:textColor="#000000"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/craneText"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="@+id/craneText"/>
+            <View
+                    android:id="@+id/divider2"
+                    android:layout_width="395dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    tools:visibility="visible"
+                    android:visibility="visible" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/elevatedSlider" android:layout_marginTop="16dp"/>
+            <TextView
+                    android:text="M02 - Crane: 0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/craneText"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp" android:textColor="#000000" android:textSize="24sp"
+                    app:layout_constraintTop_toBottomOf="@+id/divider2" android:layout_marginTop="16dp"/>
+            <TextView
+                    android:text="Advantage: 0 "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/advantageText"
+                    android:textSize="24sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="16dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            <ToggleButton
+                    android:text="ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/advantageToggle"
+                    android:textOff="No"
+                    android:textOn="Yes"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" android:layout_marginTop="8dp"
+                    android:hapticFeedbackEnabled="true"/>
+            <TextView
+                    android:text="Does the team's Equipment fit in the Small Inspection Area?  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/advantageText"/>
+            <View
+                    android:id="@+id/divider"
+                    android:layout_width="395dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    tools:visibility="visible"
+                    android:visibility="visible" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/advantageToggle" android:layout_marginTop="16dp"/>
+            <TextView
+                    android:text="M01 - Elevated Places: 0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/elevatedPlacesText"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="@+id/divider"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp" android:textColor="#000000" android:textSize="24sp"/>
+            <TextView
+                    android:text="Is the Robot Supported by the Bridge? "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView6" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/elevatedPlacesText" android:textColor="#000000"/>
+            <ToggleButton
+                    android:text="ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/elevatedPlacesToggle" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" android:textOff="No" android:textOn="Yes"
+                    android:hapticFeedbackEnabled="true"/>
+            <TextView
+                    android:text="How many Flags are clearly raised any distance, only by the Robot "
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView7" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/elevatedPlacesToggle"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp" android:textColor="#000000"
+                    android:width="0dip"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"/>
+            <SeekBar
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="206dp"
+                    android:layout_height="32dp"
+                    android:max="2"
+                    android:progress="0"
+                    android:id="@+id/elevatedSlider" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7"
+                    app:layout_constraintStart_toEndOf="@+id/elevatedSliderLabel"
+                    android:hapticFeedbackEnabled="true"/>
+            <TextView
+                    android:text="0"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/elevatedSliderLabel"
+                    android:textColor="#000000" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7" android:textSize="24sp"/>
+            <ToggleButton
+                    android:text="ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/craneToggle1" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" android:textOff="No" android:textOn="Yes"/>
+            <TextView
+                    android:text="Is Hooked Blue Unit Independent and Supported by another Blue Unit?  "
+                    android:layout_width="371dp"
+                    android:layout_height="37dp"
+                    android:id="@+id/textView4" android:textColor="#000000"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/craneToggle1"
+                    android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="16dp"/>
+            <ToggleButton
+                    android:text="ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/craneToggle2" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:textOff="No"
+                    android:textOn="yes"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8" android:layout_marginTop="8000dp"
+                    app:layout_constraintTop_toBottomOf="@+id/elevatedSlider"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="164dp" android:layout_marginStart="164dp"/>
+            <TextView
+                    android:text="Is Level 1 Completely in the Blue Circle?  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView10"
+                    app:layout_constraintStart_toStartOf="@+id/craneToggle2"
+                    android:textColor="#000000" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/craneToggle2" android:textSize="14sp"/>
+            <ToggleButton
+                    android:text="ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/droneToggle" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2"
+                    app:layout_constraintStart_toStartOf="@+id/textView2"
+                    android:textOff="no" android:textOn="yes"/>
+            <TextView
+                    android:text="Is the Bat Supported by the brown branch (B) on the Tree?  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9"
+                    android:textColor="@color/colorPrimary" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/wildlifeText"
+                    app:layout_constraintStart_toStartOf="@+id/wildlifeText"/>
+            <ToggleButton
+                    android:text="ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wildlifeToggle" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9"
+                    app:layout_constraintStart_toStartOf="@+id/textView9"
+                    android:textOff="no" android:textOn="yes"/>
+            <SeekBar
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="300dp"
+                    android:layout_height="32dp"
+                    android:max="16"
+                    android:progress="0"
+                    android:id="@+id/treehouseSlider"
+                    app:layout_constraintStart_toEndOf="@+id/treehouseLabel1"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView5"/>
+            <TextView
+                    android:text="0"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/treehouseLabel1"
+                    android:textColor="@color/colorPrimary" android:textSize="24sp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView5"
+                    app:layout_constraintStart_toStartOf="@+id/textView5"
+            />
+            <TextView
+                    android:text="How many Units are Independent and Supported by the Tree's Large Branches?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5" android:textColor="#000000"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/treehouseText"
+                    app:layout_constraintStart_toStartOf="@+id/treehouseText"/>
+            <TextView
+                    android:text="How many Units are Independent and Supported by the Tree's Small Branches? "
+                    android:layout_width="387dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/textView11"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintTop_toBottomOf="@+id/treehouseSlider" android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="@+id/treehouseLabel1"
+            />
+            <TextView
+                    android:text="Is the Traffic Jam lifted, its moving part is Independent and Supported only by its hinges? "
+                    android:layout_width="387dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/textView12"
+                    android:textColor="@color/colorPrimary" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/trafficText"
+                    app:layout_constraintStart_toStartOf="@+id/trafficText"/>
+            <ToggleButton
+                    android:text="ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/trafficToggle" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" android:textOff="no" android:textOn="yes"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+            />
+            <TextView
+                    android:text="Is the Swing released? "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13" android:textColor="#000000"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/swingText"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"/>
+            <ToggleButton
+                    android:text="ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/swingToggle" app:layout_constraintStart_toStartOf="@+id/textView13"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView13"
+                    android:textOff="no" android:textOn="yes"/>
+            <TextView
+                    android:text="Are the Elevator`s moving parts Independent and Supported only by its hinges in the Blue Car Down position?  "
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    app:layout_constraintStart_toStartOf="@+id/elevatorText"
+                    android:textColor="#000000"
+                    android:width="0dip"
+                    app:layout_constraintTop_toBottomOf="@+id/elevatorText" android:layout_marginTop="8dp"
+                    android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+            <ToggleButton
+                    android:text="ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/elevatorToggle" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14"
+                    app:layout_constraintStart_toStartOf="@+id/craneToggle3"
+                    android:textOff="NO" android:textOn="yes"/>
+            <TextView
+                    android:text="Are the Elevator`s moving parts Independent and Supported only by its hinges in the Balanced position? "
+                    android:layout_width="fill_parent"
+                    android:layout_height="31dp"
+                    android:id="@+id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/elevatorToggle"
+                    app:layout_constraintStart_toStartOf="@+id/craneToggle3"
+                    android:textColor="@color/colorPrimary"
+                    android:width="0dip"
+                    android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="8dp"/>
+            <TextView
+                    android:text="Is the structure Completely in any Circle? "
+                    android:layout_width="387dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/textView16"
+                    app:layout_constraintStart_toStartOf="@+id/craneToggle3"
+                    android:textColor="@color/colorPrimary"
+                    android:width="0dip"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/architectureText"/>
+            <TextView
+                    android:text="Is the structure partly in any Circle? "
+                    android:layout_width="381dp"
+                    android:layout_height="38dp"
+                    android:id="@+id/textView19"
+                    app:layout_constraintStart_toStartOf="@+id/craneToggle3"
+                    android:textColor="@color/colorPrimary"
+                    android:width="0dip"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/architectureToggle"/>
+            <ToggleButton
+                    android:text="ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/elevatorToggle2" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15"
+                    app:layout_constraintStart_toStartOf="@+id/textView15"
+                    android:textOff="no" android:textOn="yes"/>
+            <TextView
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/safteyLabel" android:textSize="24sp"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintTop_toTopOf="@+id/safteySlider"
+                    app:layout_constraintStart_toStartOf="@+id/textView17"/>
+            <SeekBar
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="300dp"
+                    android:layout_height="32dp"
+                    android:max="6"
+                    android:progress="0"
+                    android:id="@+id/safteySlider"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    app:layout_constraintStart_toEndOf="@+id/safteyLabel"
+            />
+            <TextView
+                    android:text="How many beams have been knocked out at least half way?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView17"
+                    android:textColor="@color/colorPrimary" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/safteyText"
+                    app:layout_constraintStart_toStartOf="@+id/safteyText"/>
+            <TextView
+                    android:text="Is the Steel Structure standing, and is Independent and Supported only by its hinges? "
+                    android:layout_width="379dp"
+                    android:layout_height="31dp"
+                    android:width="0dip"
+                    android:id="@+id/textView18"
+                    android:textColor="@color/colorPrimary" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/constructionText"
+                    app:layout_constraintStart_toStartOf="@+id/constructionText"
+            />
+            <ToggleButton
+                    android:text="ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/steelToggle" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    app:layout_constraintStart_toStartOf="@+id/textView4"
+            />
+            <ToggleButton
+                    android:text="ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/architectureToggle" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    android:textOff="no" android:textOn="yes"/>
+            <ToggleButton
+                    android:text="ToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/architectureToggle2" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19"
+                    app:layout_constraintStart_toStartOf="@+id/craneText"
+                    android:textOff="no" android:textOn="yes"/>
+            <fragment
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:name="com.havish.cityshaperscorer.Mission12"
+                    android:id="@+id/fragment" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/divider13"
+                    tools:layout="@layout/fragment_mission12" app:layout_constraintStart_toStartOf="parent"
+            />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
